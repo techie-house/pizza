@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+  background-color: wheat;
+}
+
+.nav{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.nav ul li a{
+  text-decoration: none;
+  color: rgb(165, 116, 19);
+  text-transform: uppercase;
+  float: right;
+}
+.nav ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #973719;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.nav ul li :hover::after{
+  width: 100%;
+}
+.content{
+  width: 500px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 #999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #3f1616;
+    background: transparent;
+    color: rgb(145, 88, 88);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  span{
+    background: #310e0e;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  button:hover span{
+    width: 100%;
+  }
+  button:hover{
+    border: none;
+  }
+  a{
+    color: rgb(161, 118, 118);
+  }
+  .cont{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(48, 43, 44);
+  }
+  form{
+    margin: 35px;
+  }
+  .input-field{
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+  }
+  .textarea-field{
+    height: 150px;
+    padding-top: 10px;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    width: 90%;
+    height: 40px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  img{
+    height: 50px;
+    display: inline-block;
+  }
+  .const{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(14, 13, 13, 0.75)), url(/IMAGES/pizza3.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  p{
+    color: azure;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  .logo{
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+  }
